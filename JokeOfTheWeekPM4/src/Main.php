@@ -24,7 +24,7 @@ class JokeOfTheWeekPM4 extends PluginBase implements Listener{
 		$this->getLogger()->info("Joke of the week is enabled!");
 	}
 
-	private function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		if ($command->getName() === "jotw") {
 			$sender->echo("Joke: Why do actors have to always go to hospital? Because they always have a CAST");
 			return true;
