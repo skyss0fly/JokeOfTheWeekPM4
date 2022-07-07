@@ -6,7 +6,7 @@ namespace skyss0fly\JokeOfTheWeekPM4;
 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\joke;
+use pocketmine\command;
 use pocketmine\command\CommandSender;
 
 class Main extends PluginBase implements Listener{
