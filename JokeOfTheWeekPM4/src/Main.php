@@ -9,7 +9,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-class Main extends PluginBase implements Listener{
+class JokeOfTheWeekPM4 extends PluginBase implements Listener{
 
 	/** This is a public constant that you can access from anywhere by doing ExamplePlugin::VERSION */
 	public const VERSION = "v1.0.0";
