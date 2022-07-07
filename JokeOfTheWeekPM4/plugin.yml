@@ -6,10 +6,11 @@ api: 4.5.2
 src-namespace-prefix: skyss0fly\JokeOfTheWeekPM4
 
 commands:
-     joke:
-     description: Tell a funny Joke!
-     aliases: []
-     permission: jotw.command
+ joke:
+  description: Tell a funny Joke!
+  aliases: []
+  permission: jotw.command
+
 permissions:
  jotw.command:
  description: Permission for /joke
