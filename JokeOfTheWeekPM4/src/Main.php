@@ -11,7 +11,7 @@ use pocketmine\command\CommandSender;
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		if ($command->getName() === "jotw") {
-			$sender->SendMessage("Joke: Why do actors have to always go to hospital? Because they always have a CAST");
+			$sender->echo("Joke: Why do actors have to always go to hospital? Because they always have a CAST");
 			return true;
 		}
 		return true;
