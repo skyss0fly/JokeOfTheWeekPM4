@@ -1,9 +1,9 @@
 ---
 name: JokeOfTheWeekPM4
 version: 0.0.1
-main: skyss0fly\JokeOfTheWeekPM4\
+main: skyss0fly\JokeOfTheWeekPM4\src
 api: 4.5.2
-src-namespace-prefix: skyss0fly\JokeOfTheWeekPM4\src
+src-namespace-prefix: skyss0fly\JokeOfTheWeekPM4
 
 commands:
      jotw:
