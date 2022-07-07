@@ -19,7 +19,7 @@ class JokeOfTheWeekPM4 extends PluginBase implements Listener{
 
 	/** Example of the onEnable function */
 	public function onEnable() : void{
-		self::$JokeOfTheWeekPM4 = $this;
+		self::$this = $this;
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->getLogger()->info("Joke of the week is enabled!");
 	}
