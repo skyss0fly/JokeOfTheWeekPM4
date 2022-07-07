@@ -6,16 +6,17 @@ namespace skyss0fly\JokeOfTheWeekPM4;
 
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\Command;
+use pocketmine\command\Command\joke;
 use pocketmine\command\CommandSender;
 
 class Main extends PluginBase implements Listener{
 
-	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
-		if ($command->getName() === "joke") {
-			$sender->sendMessage("Joke: Why do actors have to always go to hospital? Because they always have a CAST");
-			return true;
-		}
-		return true;
-	}
-}
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
+    switch($command->getName()){
+        case "joke":
+            $sender->sendMessage("Why did the actor have to go to hospital? Because He had a cast" . $sender->getName() . "!");
+
+            return true;
+        default:
+            throw new \AssertionError("This line will never be executed");
+    }
