@@ -9,7 +9,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+	private function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		if ($command->getName() === "jotw") {
 			$sender->echo("Joke: Why do actors have to always go to hospital? Because they always have a CAST");
 			return true;
