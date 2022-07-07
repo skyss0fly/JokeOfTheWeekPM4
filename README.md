@@ -3,7 +3,9 @@
 
 Do /jotw for the weekly joke! simple but fun.
 STILL IN BETA!! MAKE SURE TO BACKUP YOUR SERVER IF YOU USE THIS PLUGIN, THIS PLUGIN CAN BREAK!
-
+------------------------
+Optional Dependencies:
+https://github.com/DavidGlitch04/PluginUpdater
 -------------------------
 Plugin is broken: 7/07/2022 WORKING ON FIX
 
