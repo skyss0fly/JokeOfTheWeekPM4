@@ -5,5 +5,5 @@ branches:
 projects:
   JokeOfTheWeekPM4:
     path: JokeOfTheWeekPM4/
-    icon: JokeOfTheWeekPM4/blob/main/icon.png
+    icon: icon.png
 ...
