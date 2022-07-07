@@ -17,5 +17,5 @@ class Main extends PluginBase implements Listener{
             $sender->sendMessage("Why did the actor have to go to hospital? Because He had a cast!");
 
             return true
-		    }
+		    ;
 }
