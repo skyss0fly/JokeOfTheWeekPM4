@@ -16,7 +16,5 @@ class Main extends PluginBase implements Listener{
         case "joke":
             $sender->sendMessage("Why did the actor have to go to hospital? Because He had a cast!");
 
-            return true
-		    ;
-}
-	}
+            return true;
+    }
