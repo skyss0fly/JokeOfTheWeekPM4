@@ -9,7 +9,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-class JokeOfTheWeekPM4 extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
 
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
 		if ($command->getName() === "joke") {
