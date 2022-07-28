@@ -14,19 +14,19 @@ class Main extends PluginBase{
 	public function onLoad(): void {
 		
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_BLUE . "JokeOfTheWeekPM4 Has Successfully loaded| It is advised to use LibPiggyUpdateChecker!!");
+			$this->getLogger()->info(TextFormat::MINECOIN_GOLD . "JokeOfTheWeekPM4 Has Successfully loaded| It is advised to use LibPiggyUpdateChecker!!");
 		}
 	}
 	
 	public function onEnable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_GREEN . "Why don’t pirates take a shower before they walk the plank? They just wash up on shore.");
+			$this->getLogger()->info(TextFormat::LIGHT_PURPLE . "Why don’t pirates take a shower before they walk the plank? They just wash up on shore.");
 		}
 	}
 	
 	public function onDisable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_RED . "Goodbye hope you had fun!!");
+			$this->getLogger()->info(TextFormat::DARK_AQUA . "Goodbye hope you had fun!!");
 		}
 	}
 }
