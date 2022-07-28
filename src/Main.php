@@ -14,7 +14,7 @@ class Main extends PluginBase{
 	public function onLoad(): void {
 		
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_BLUE . "JokeOfTheWeekPM4 Has Successfully loaded| It is advised to use PiggyUpdateChecker!!");
+			$this->getLogger()->info(TextFormat::DARK_BLUE . "JokeOfTheWeekPM4 Has Successfully loaded| It is advised to use LibPiggyUpdateChecker!!");
 		}
 	}
 	
