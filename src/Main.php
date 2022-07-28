@@ -12,18 +12,9 @@ class Main extends PluginBase{
 	private bool $debugMode = true;
 	
 	public function onLoad(): void {
-		foreach (
-            [
-                "libPiggyUpdateChecker" => libPiggyUpdateChecker::class
-            ] as $virion => $class
-        ) {
-            if (!class_exists($class)) {
-                $this->getLogger()->error($virion . " virion not found. its not needed but it is recommended to get piggyupdatechecker!");
-                $this->getLogger()->error("Jokes are still going to be outputted.");
-                return;
-            }
+		
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::DARK_BLUE . "JokeOfTheWeekPM4 Has Successfully loaded");
+			$this->getLogger()->info(TextFormat::DARK_BLUE . "JokeOfTheWeekPM4 Has Successfully loaded| It is advised to use PiggyUpdateChecker!!");
 		}
 	}
 	
