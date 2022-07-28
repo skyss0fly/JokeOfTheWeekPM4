@@ -1,0 +1,7 @@
+---
+name: JokeOfTheWeekPM4
+version: 0.2.3
+main: skyss0fly\JokeOfTheWeekPM4\Main
+api: 4.5.2
+src-namespace-prefix: skyss0fly\JokeOfTheWeekPM4
+...
