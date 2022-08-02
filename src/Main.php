@@ -21,7 +21,7 @@ class Main extends PluginBase{
 	
 	public function onEnable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::LIGHT_PURPLE . "Why don’t pirates take a shower before they walk the plank? They just wash up on shore.");
+			$this->getLogger()->info(TextFormat::LIGHT_PURPLE . "Why do actors always break their legs? because they have a CAST!");
 		}
 	}
 	
