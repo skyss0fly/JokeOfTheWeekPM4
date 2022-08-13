@@ -7,6 +7,9 @@ namespace skyss0fly\JokeOfTheWeekPM4;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\command\CommandExecutor;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\ConsoleCommandSender;
 use DaPigGuy\libPiggyUpdateChecker\libPiggyUpdateChecker;
 
 class Main extends PluginBase{
