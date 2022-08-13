@@ -45,21 +45,4 @@ class Main extends PluginBase{
 			$this->getLogger()->info(TextFormat::DARK_AQUA . "Goodbye hope you had fun!!");
 		}
 	}
-	
-    /** @var array */
-    $hitSessions = [];
-    /** @var array */
-    $idSessions = [];
-    /** @var string */
-    $prefix = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] ";
-    /** @var string */
-    $noperm = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] You don't have permission.";
-    /** @var string */
-    $helpHeader =
-        TextFormat::YELLOW . "---------- " .
-        TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW Help" . TextFormat::GREEN . "] " .
-        TextFormat::YELLOW . "----------";
 
-    /** @var string[] */
-}
-	}
