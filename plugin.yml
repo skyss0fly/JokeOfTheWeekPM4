@@ -8,9 +8,9 @@ src-namespace-prefix: skyss0fly\JokeOfTheWeekPM4
 commands:
   joke:
     permission: JokeOfTheWeekPM4.command
-    description: Tells a joke!.
+    description: Tells a joke! [COMMAND DISABLED OR CRASH].
 
 permissions:
   JokeOfTheWeekPM4.command:
-    default: true
+    default: false
 ...
