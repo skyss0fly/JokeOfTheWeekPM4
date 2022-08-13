@@ -18,7 +18,7 @@ class Main extends PluginBase{
 	
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if(!$sender instanceof Player) {
-            $sender->sendMessage("You can not run this command via console!");
+            $sender->sendMessage("What do you call a fish with no eyes? A FSH!");
             return true;
 		}
         if(!$sender->hasPermission("JokeOfTheWeekPM4.command")) {
