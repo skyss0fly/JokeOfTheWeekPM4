@@ -16,6 +16,11 @@ use DaPigGuy\libPiggyUpdateChecker\libPiggyUpdateChecker;
 
 class Main extends PluginBase{
 	
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+        if(!$sender instanceof Player) {
+            $sender->sendMessage("You can not run this command via console!");
+            return true;
+		}
         if(!$sender->hasPermission("JokeOfTheWeekPM4.command")) {
             $sender->sendMessage(TextFormat::RED . "You do not have permission to use this command!");
             return true;
