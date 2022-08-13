@@ -18,7 +18,7 @@ class Main extends PluginBase{
 	
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if(!$sender instanceof Player) {
-            $sender->sendMessage("What do you call a fish with no eyes? A FSH!");
+            $sender->sendMessage(TextFormat::GREEN . "Joke:" . TextFormat::RED . "What do you call a Fish with no Eye?" . TextFormat::GREEN. "] A FSH!");
             return true;
 		}
         if(!$sender->hasPermission("JokeOfTheWeekPM4.command")) {
