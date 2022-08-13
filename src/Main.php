@@ -47,15 +47,15 @@ class Main extends PluginBase{
 	}
 	
     /** @var array */
-    public $hitSessions = [];
+    $hitSessions = [];
     /** @var array */
-    public $idSessions = [];
+    $idSessions = [];
     /** @var string */
-    public $prefix = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] ";
+    $prefix = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] ";
     /** @var string */
-    public $noperm = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] You don't have permission.";
+    $noperm = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] You don't have permission.";
     /** @var string */
-    public $helpHeader =
+    $helpHeader =
         TextFormat::YELLOW . "---------- " .
         TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW Help" . TextFormat::GREEN . "] " .
         TextFormat::YELLOW . "----------";
