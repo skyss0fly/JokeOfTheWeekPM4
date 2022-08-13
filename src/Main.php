@@ -26,7 +26,7 @@ class Main extends PluginBase{
             return true;
         }
 	
-	private bool $debugMode = true;
+        bool $debugMode = true;
 	
 	public function onLoad(): void {
 		
