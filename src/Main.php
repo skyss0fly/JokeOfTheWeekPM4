@@ -4,15 +4,27 @@ declare(strict_types=1);
 
 namespace skyss0fly\JokeOfTheWeekPM4;
 
+
 use pocketmine\plugin\PluginBase;
-use pocketmine\utils\TextFormat;
-use pocketmine\command\CommandExecutor;
+use pocketmine\player\Player;
+use pocketmine\Server;
+use pocketmine\event\Listener;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use pocketmine\command\ConsoleCommandSender;
+use pocketmine\utils\TextFormat;
 use DaPigGuy\libPiggyUpdateChecker\libPiggyUpdateChecker;
 
 class Main extends PluginBase{
+	
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+        if(!$sender instanceof Player) {
+            $sender->sendMessage("You can not run this command via console!");
+            return true;
+		}
+        if(!$sender->hasPermission("JokeOfTheWeekPM4.command")) {
+            $sender->sendMessage(TextFormat::RED . "You do not have permission to use this command!");
+            return true;
+        }
 	
 	private bool $debugMode = true;
 	
@@ -50,18 +62,6 @@ class Main extends PluginBase{
         TextFormat::YELLOW . "----------";
 
     /** @var string[] */
-    public $mainArgs = [
-	    "joke: /joke",
-	    ];
-	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
-        switch (strtolower($command->getName())) {
-            case "nothing":
-                return true;
-            case "joke":
-                if (count($args) < 2) {
-                    $sender->sendMessage($this->prefix . "What do you call a fish with no eyes? A FSH!");
-                    return true;
-		}
 }
 	}
 }
