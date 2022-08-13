@@ -30,4 +30,34 @@ class Main extends PluginBase{
 			$this->getLogger()->info(TextFormat::DARK_AQUA . "Goodbye hope you had fun!!");
 		}
 	}
+	
+    /** @var array */
+    public $hitSessions = [];
+    /** @var array */
+    public $idSessions = [];
+    /** @var string */
+    public $prefix = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] ";
+    /** @var string */
+    public $noperm = TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW" . TextFormat::GREEN . "] You don't have permission.";
+    /** @var string */
+    public $helpHeader =
+        TextFormat::YELLOW . "---------- " .
+        TextFormat::GREEN . "[" . TextFormat::YELLOW . "JOTW Help" . TextFormat::GREEN . "] " .
+        TextFormat::YELLOW . "----------";
+
+    /** @var string[] */
+    public $mainArgs = [
+        "help: /joke help",
+        "joke: /joke",
+        "jotw: /jotw",
+	    ];
+	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+        switch (strtolower($command->getName())) {
+            case "nothing":
+                return true;
+            case "joke":
+                if (count($args) < 2) {
+                    $sender->sendMessage($this->prefix . "What do you call a fish with no eyes? A FSH!");
+                    return true;
+		}
 }
