@@ -21,7 +21,7 @@ class Main extends PluginBase{
 	
 	public function onEnable(): void {
 		if ($this->debugMode) {
-			$this->getLogger()->info(TextFormat::LIGHT_PURPLE . "Why do actors always break their legs? because they have a CAST!");
+			$this->getLogger()->info(TextFormat::LIGHT_PURPLE . "What do you call a fish with no eyes? A FSH!");
 		}
 	}
 	
