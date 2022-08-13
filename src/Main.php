@@ -63,4 +63,3 @@ class Main extends PluginBase{
     /** @var string[] */
 }
 	}
-}
