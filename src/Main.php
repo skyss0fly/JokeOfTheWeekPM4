@@ -22,7 +22,7 @@ class Main extends PluginBase{
             return true;
 		}
         if(!$sender->hasPermission("JokeOfTheWeekPM4.command")) {
-            $sender->sendMessage(TextFormat::RED . "You do not have permission to use this command!");
+            $sender->sendMessage(TextFormat::DARK_RED . "!!" . TextFormat::RED . "HEY!" . TextFormat::GREEN. "] You don't have permission.");
             return true;
         }
 	
