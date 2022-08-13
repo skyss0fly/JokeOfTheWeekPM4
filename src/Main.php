@@ -47,9 +47,7 @@ class Main extends PluginBase{
 
     /** @var string[] */
     public $mainArgs = [
-        "help: /joke help",
-        "joke: /joke",
-        "jotw: /jotw",
+	    "joke: /joke",
 	    ];
 	public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         switch (strtolower($command->getName())) {
