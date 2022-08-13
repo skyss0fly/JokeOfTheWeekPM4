@@ -4,4 +4,13 @@ version: 0.2.3
 main: skyss0fly\JokeOfTheWeekPM4\Main
 api: 4.7.0
 src-namespace-prefix: skyss0fly\JokeOfTheWeekPM4
+
+commands:
+  joke:
+    permission: JokeOfTheWeekPM4.command
+    description: Tells a joke!.
+
+permissions:
+  JokeOfTheWeekPM4.command:
+    default: true
 ...
