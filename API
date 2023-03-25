@@ -14,8 +14,10 @@
   - Bumped API, added the abilty to execute /joke through console
   - Locked the command in game temporarily to patch a game breaking bug that happens when /joke is executed in game.
   
+  6. 4.17.0
+  - BUMPED API
+ 
   
-  
-  -------- Latest Version: JokeOfTheWeekPM4 For API: 4.7.2 -------
+  -------- Latest Version: JokeOfTheWeekPM4 For API: 4.17.0 -------
   || If your Plugin Version is On a lower Version then the Latest. please expect the plugin to be broken ||
   
